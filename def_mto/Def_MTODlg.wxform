@@ -1,0 +1,2286 @@
+object frmNewForm: TfrmNewForm
+  Left = 8
+  Top = 8
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Param'#233'trage MTO'
+  ClientHeight = 533
+  ClientWidth = 497
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = MainForm.DesignerPopup
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'Def_MTODlg'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxDialog'
+  Wx_Center = True
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = [wxSIMPLE_BORDER]
+  Wx_DialogStyle = [wxCAPTION, wxRESIZE_BORDER, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxMAXIMIZE_BOX, wxCLOSE_BOX]
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  PixelsPerInch = 120
+  TextHeight = 25
+  object WxStaticText1: TWxStaticText
+    Left = 201
+    Top = 6
+    Width = 88
+    Height = 39
+    Caption = 'METEO'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -25
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT1'
+    Wx_IDValue = 1001
+    Wx_LabelStyle = []
+  end
+  object WxStaticText2: TWxStaticText
+    Left = 69
+    Top = 13
+    Width = 51
+    Height = 27
+    Caption = 'Z max'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT2'
+    Wx_IDValue = 1002
+    Wx_LabelStyle = []
+  end
+  object WxStaticText3: TWxStaticText
+    Left = 80
+    Top = 43
+    Width = 53
+    Height = 27
+    Caption = '20.000'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT3'
+    Wx_IDValue = 1003
+    Wx_LabelStyle = []
+  end
+  object WxZone3: TWxStaticText
+    Left = 48
+    Top = 92
+    Width = 82
+    Height = 34
+    Alignment = taCenter
+    Caption = 'ZONE 3'
+    Color = clSilver
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXZONE3'
+    Wx_IDValue = 1004
+    Wx_LabelStyle = [wxST_ALIGN_CENTRE]
+    InvisibleBGColorString = 'STD:wxLIGHT_GREY'
+  end
+  object WxStaticText5: TWxStaticText
+    Left = 66
+    Top = 137
+    Width = 55
+    Height = 27
+    Caption = 'Z Ref+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT5'
+    Wx_IDValue = 1005
+    Wx_LabelStyle = []
+  end
+  object WxStaticText6: TWxStaticText
+    Left = 9
+    Top = 171
+    Width = 30
+    Height = 29
+    Caption = 'Z 2'
+    TabOrder = 5
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT6'
+    Wx_IDValue = 1006
+    Wx_LabelStyle = []
+  end
+  object WxStaticText7: TWxStaticText
+    Left = 211
+    Top = 163
+    Width = 108
+    Height = 34
+    Caption = 'Transition'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT7'
+    Wx_IDValue = 1007
+    Wx_LabelStyle = []
+  end
+  object WxZone2: TWxStaticText
+    Left = 44
+    Top = 228
+    Width = 82
+    Height = 34
+    Alignment = taCenter
+    Caption = 'ZONE 2'
+    Color = clSilver
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 7
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXZONE2'
+    Wx_IDValue = 1008
+    Wx_LabelStyle = [wxST_ALIGN_CENTRE]
+    InvisibleBGColorString = 'STD:wxLIGHT_GREY'
+  end
+  object WxStaticText9: TWxStaticText
+    Left = 68
+    Top = 270
+    Width = 55
+    Height = 27
+    Caption = 'Z Ref+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT9'
+    Wx_IDValue = 1009
+    Wx_LabelStyle = []
+  end
+  object WxStaticText10: TWxStaticText
+    Left = 16
+    Top = 305
+    Width = 30
+    Height = 29
+    Caption = 'Z 1'
+    TabOrder = 9
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT10'
+    Wx_IDValue = 1010
+    Wx_LabelStyle = []
+  end
+  object WxStaticText11: TWxStaticText
+    Left = 208
+    Top = 300
+    Width = 108
+    Height = 34
+    Caption = 'Transition'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT11'
+    Wx_IDValue = 1011
+    Wx_LabelStyle = []
+  end
+  object WxStaticText12: TWxStaticText
+    Left = 79
+    Top = 430
+    Width = 47
+    Height = 27
+    Caption = 'Z Ref.'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT12'
+    Wx_IDValue = 1012
+    Wx_LabelStyle = []
+  end
+  object WxZone1: TWxStaticText
+    Left = 46
+    Top = 366
+    Width = 82
+    Height = 34
+    Alignment = taRightJustify
+    Caption = 'ZONE 1'
+    Color = clSilver
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 12
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXZONE1'
+    Wx_IDValue = 1013
+    Wx_LabelStyle = [wxST_ALIGN_LEFT, wxST_ALIGN_RIGHT, wxST_ALIGN_CENTRE]
+    InvisibleBGColorString = 'STD:wxLIGHT_GREY'
+    InvisibleFGColorString = 'STD:wxBLACK'
+  end
+  object WxStaticText14: TWxStaticText
+    Left = 139
+    Top = 81
+    Width = 69
+    Height = 24
+    Caption = 'VISIBILITY'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT14'
+    Wx_IDValue = 1014
+    Wx_LabelStyle = []
+  end
+  object WxStaticText15: TWxStaticText
+    Left = 134
+    Top = 208
+    Width = 69
+    Height = 24
+    Caption = 'VISIBILITY'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT15'
+    Wx_IDValue = 1015
+    Wx_LabelStyle = []
+  end
+  object WxStaticText16: TWxStaticText
+    Left = 134
+    Top = 355
+    Width = 69
+    Height = 24
+    Caption = 'VISIBILITY'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT16'
+    Wx_IDValue = 1016
+    Wx_LabelStyle = []
+  end
+  object WxStaticText17: TWxStaticText
+    Left = 321
+    Top = 79
+    Width = 44
+    Height = 24
+    Caption = 'WIND'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT17'
+    Wx_IDValue = 1017
+    Wx_LabelStyle = []
+  end
+  object WxStaticText18: TWxStaticText
+    Left = 317
+    Top = 201
+    Width = 44
+    Height = 24
+    Caption = 'WIND'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 17
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT18'
+    Wx_IDValue = 1018
+    Wx_LabelStyle = []
+  end
+  object WxStaticText19: TWxStaticText
+    Left = 318
+    Top = 345
+    Width = 44
+    Height = 24
+    Caption = 'WIND'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 18
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT19'
+    Wx_IDValue = 1019
+    Wx_LabelStyle = []
+  end
+  object WxStaticText20: TWxStaticText
+    Left = 145
+    Top = 114
+    Width = 60
+    Height = 24
+    Caption = 'CLOUDS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 19
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT20'
+    Wx_IDValue = 1020
+    Wx_LabelStyle = []
+  end
+  object WxStaticText21: TWxStaticText
+    Left = 141
+    Top = 244
+    Width = 60
+    Height = 24
+    Caption = 'CLOUDS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 20
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT21'
+    Wx_IDValue = 1021
+    Wx_LabelStyle = []
+  end
+  object WxStaticText22: TWxStaticText
+    Left = 136
+    Top = 387
+    Width = 60
+    Height = 24
+    Caption = 'CLOUDS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 21
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT22'
+    Wx_IDValue = 1022
+    Wx_LabelStyle = []
+  end
+  object WxStaticText23: TWxStaticText
+    Left = 337
+    Top = 115
+    Width = 29
+    Height = 24
+    Caption = 'KTS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 22
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT23'
+    Wx_IDValue = 1023
+    Wx_LabelStyle = []
+  end
+  object WxStaticText24: TWxStaticText
+    Left = 333
+    Top = 243
+    Width = 29
+    Height = 24
+    Caption = 'KTS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 23
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT24'
+    Wx_IDValue = 1024
+    Wx_LabelStyle = []
+  end
+  object WxStaticText25: TWxStaticText
+    Left = 328
+    Top = 397
+    Width = 29
+    Height = 24
+    Caption = 'KTS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 24
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT25'
+    Wx_IDValue = 1025
+    Wx_LabelStyle = []
+  end
+  object WxStaticText26: TWxStaticText
+    Left = 251
+    Top = 427
+    Width = 72
+    Height = 27
+    Caption = 'QNH mb'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 25
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT26'
+    Wx_IDValue = 1026
+    Wx_LabelStyle = []
+  end
+  object WxStaticText27: TWxStaticText
+    Left = 373
+    Top = 428
+    Width = 45
+    Height = 27
+    Caption = 'TP '#176'C'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 26
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT27'
+    Wx_IDValue = 1027
+    Wx_LabelStyle = []
+  end
+  object WxEdit_V3: TWxEdit
+    Left = 211
+    Top = 74
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 27
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_V3'
+    Wx_IDValue = 1028
+    Wx_MaxLength = 0
+  end
+  object WxEdit_C3: TWxEdit
+    Left = 211
+    Top = 108
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 28
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_C3'
+    Wx_IDValue = 1029
+    Wx_MaxLength = 0
+  end
+  object WxEdit_W3: TWxEdit
+    Left = 366
+    Top = 74
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 29
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_W3'
+    Wx_IDValue = 1030
+    Wx_MaxLength = 0
+  end
+  object WxEdit_K3: TWxEdit
+    Left = 367
+    Top = 108
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 30
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_K3'
+    Wx_IDValue = 1031
+    Wx_MaxLength = 0
+  end
+  object WxEdit_V2: TWxEdit
+    Left = 211
+    Top = 201
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 31
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_V2'
+    Wx_IDValue = 1032
+    Wx_MaxLength = 0
+  end
+  object WxEdit_C2: TWxEdit
+    Left = 211
+    Top = 237
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 32
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_C2'
+    Wx_IDValue = 1033
+    Wx_MaxLength = 0
+  end
+  object WxEdit_W2: TWxEdit
+    Left = 366
+    Top = 202
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 33
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_W2'
+    Wx_IDValue = 1034
+    Wx_MaxLength = 0
+  end
+  object WxEdit_K2: TWxEdit
+    Left = 366
+    Top = 235
+    Width = 96
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 34
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_K2'
+    Wx_IDValue = 1035
+    Wx_MaxLength = 0
+  end
+  object WxEdit_V1: TWxEdit
+    Left = 210
+    Top = 345
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 35
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_V1'
+    Wx_IDValue = 1036
+    Wx_MaxLength = 0
+  end
+  object WxEdit_C1: TWxEdit
+    Left = 211
+    Top = 384
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 36
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_C1'
+    Wx_IDValue = 1037
+    Wx_MaxLength = 0
+  end
+  object WxEdit_W1: TWxEdit
+    Left = 365
+    Top = 343
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 37
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_W1'
+    Wx_IDValue = 1038
+    Wx_MaxLength = 0
+  end
+  object WxEdit_K1: TWxEdit
+    Left = 366
+    Top = 390
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 38
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_K1'
+    Wx_IDValue = 1039
+    Wx_MaxLength = 0
+  end
+  object WxEdit_Z2T2: TWxEdit
+    Left = 64
+    Top = 162
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 39
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_Z2T2'
+    Wx_IDValue = 1040
+    Wx_MaxLength = 0
+  end
+  object WxEdit_Z2T1: TWxEdit
+    Left = 366
+    Top = 158
+    Width = 96
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 40
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_Z2T1'
+    Wx_IDValue = 1041
+    Wx_MaxLength = 0
+  end
+  object WxStaticLine2: TWxStaticLine
+    Left = 174
+    Top = 176
+    Width = 27
+    Height = 7
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 41
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticLine'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICLINE2'
+    Wx_IDValue = 1043
+    Wx_LIOrientation = wxLI_HORIZONTAL
+    Wx_Length = 27
+    LastOrientation = wxLI_HORIZONTAL
+    InvisibleBGColorString = 'STD:wxBLUE'
+    Wx_Border = 10
+  end
+  object WxStaticLine3: TWxStaticLine
+    Left = 153
+    Top = 48
+    Width = 213
+    Height = 7
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGreen
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 42
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticLine'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICLINE3'
+    Wx_IDValue = 1044
+    Wx_LIOrientation = wxLI_HORIZONTAL
+    Wx_Length = 213
+    LastOrientation = wxLI_HORIZONTAL
+    InvisibleFGColorString = 'STD:wxGREEN'
+    Wx_Border = 10
+  end
+  object WxStaticLine4: TWxStaticLine
+    Left = 175
+    Top = 313
+    Width = 27
+    Height = 7
+    Color = clBlack
+    ParentColor = False
+    TabOrder = 43
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticLine'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICLINE4'
+    Wx_IDValue = 1048
+    Wx_LIOrientation = wxLI_HORIZONTAL
+    Wx_Length = 27
+    LastOrientation = wxLI_HORIZONTAL
+    InvisibleBGColorString = 'STD:wxBLACK'
+    Wx_Border = 10
+  end
+  object WxEdit_Z1T2: TWxEdit
+    Left = 65
+    Top = 298
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 44
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_Z1T2'
+    Wx_IDValue = 1050
+    Wx_MaxLength = 0
+  end
+  object WxEdit_Z1T1: TWxEdit
+    Left = 367
+    Top = 295
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 45
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_Z1T1'
+    Wx_IDValue = 1051
+    Wx_MaxLength = 0
+  end
+  object WxEdit_Z: TWxEdit
+    Left = 64
+    Top = 460
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 46
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_Z'
+    Wx_IDValue = 1052
+    Wx_MaxLength = 0
+  end
+  object WxEdit_QNH: TWxEdit
+    Left = 241
+    Top = 463
+    Width = 96
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 47
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_QNH'
+    Wx_IDValue = 1053
+    Wx_MaxLength = 0
+  end
+  object WxEdit_Tp: TWxEdit
+    Left = 360
+    Top = 463
+    Width = 97
+    Height = 25
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Alignment = taCenter
+    Modified = False
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 48
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EditStyle = [wxTE_CENTRE]
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxSIMPLE_BORDER]
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXEDIT_TP'
+    Wx_IDValue = 1054
+    Wx_MaxLength = 0
+  end
+  object WxStaticText28: TWxStaticText
+    Left = 91
+    Top = 500
+    Width = 317
+    Height = 24
+    Caption = 'AIRPORT GROUND ( 0 '#224' 6000ft par pas de 10ft)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 49
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT28'
+    Wx_IDValue = 1057
+    Wx_LabelStyle = []
+  end
+  object WxStaticText29: TWxStaticText
+    Left = 470
+    Top = 69
+    Width = 11
+    Height = 29
+    Caption = #176
+    TabOrder = 50
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT29'
+    Wx_IDValue = 1058
+    Wx_LabelStyle = []
+  end
+  object WxStaticText30: TWxStaticText
+    Left = 464
+    Top = 199
+    Width = 11
+    Height = 29
+    Caption = #176
+    TabOrder = 51
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT30'
+    Wx_IDValue = 1059
+    Wx_LabelStyle = []
+  end
+  object WxStaticText31: TWxStaticText
+    Left = 460
+    Top = 333
+    Width = 11
+    Height = 29
+    Caption = #176
+    TabOrder = 52
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT31'
+    Wx_IDValue = 1060
+    Wx_LabelStyle = []
+  end
+  object WxStaticLine1: TWxStaticLine
+    Left = 321
+    Top = 315
+    Width = 39
+    Height = 7
+    Color = clBlack
+    ParentColor = False
+    TabOrder = 53
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticLine'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICLINE1'
+    Wx_IDValue = 1063
+    Wx_LIOrientation = wxLI_HORIZONTAL
+    Wx_Length = 39
+    LastOrientation = wxLI_HORIZONTAL
+    InvisibleBGColorString = 'STD:wxBLACK'
+    Wx_Border = 10
+  end
+  object WxStaticLine5: TWxStaticLine
+    Left = 317
+    Top = 176
+    Width = 35
+    Height = 7
+    Color = clBlack
+    ParentColor = False
+    TabOrder = 54
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticLine'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICLINE5'
+    Wx_IDValue = 1064
+    Wx_LIOrientation = wxLI_HORIZONTAL
+    Wx_Length = 35
+    LastOrientation = wxLI_HORIZONTAL
+    InvisibleBGColorString = 'STD:wxBLACK'
+    Wx_Border = 10
+  end
+  object WxStaticText4: TWxStaticText
+    Left = 406
+    Top = 10
+    Width = 33
+    Height = 27
+    Caption = 'A-S'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 55
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT4'
+    Wx_IDValue = 1065
+    Wx_LabelStyle = []
+  end
+  object WxLedV1: TWxStaticBitmap
+    Left = 10
+    Top = 366
+    Width = 27
+    Height = 30
+    TabOrder = 56
+    Picture.Data = {
+      07544269746D61709E050000424D9E0500000000000036040000280000001100
+      0000120000000100080000000000680100000000000000000000000100000000
+      0000D8E9EC005A5A5A0022262200020A0A0062645E004242420087847E00C6BE
+      BE00CBD3CB00C6B2C600969296002736250072726A00829D85003A4E3B006A66
+      62009A9E9E001E3E22003E7052006A9C7A0087C6A6009EDABE009ED6B6006AAA
+      7A003A6A4200265E2C0022934A00379B55003DA967004296720042AE75004296
+      5A000A3612002A82420025A9520034B3680040C07A002A7A3A00163E160036AE
+      5A0058DE9D0040CF7F0054D093002EC26A0022A65A0012521A006AE6B20078F4
+      BD002A6A320047795700358855005AEEA3007EFEC4009AFAC600428652008A8D
+      870056C69E0088FDD20047654F0062C29E006ADEBE003E574600000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000009C7C
+      4100000000000000000008866000B0EBBF00DC34000000000000000000000000
+      000000000000000000009C000000130000009C7C41000000000000000000544B
+      C000544BC000240000000000000000000000000000000000000000000000AC0A
+      0000130000009C7C4100000000000000000008866000B0EBBF00743400000000
+      0000000000000000000000000000000000000000000008866000B0EBBF005034
+      000000000000BC4BC000BC4BC000C00000000000000000000000000000000000
+      00000000000000000000E04BC000E04BC0009C00000000000000F04BC000F04B
+      C000240000000400000000000000000000000000000000000000340000001300
+      00009C7C41000000000000000000244CC000244CC00024000000000000000000
+      000000040000000000000000000068000000130000009C7C4100000000000000
+      0000584CC000584CC00024000000000040000000000000000000000000000000
+      0000D0000000130000009C7C4100000000000000000008866000B0EBBF007033
+      000000000000000000000001000000000000000000000000000008866000B0EB
+      BF004C33000000000000C04CC000C04CC0002400000080000000000000000000
+      0000000000000000000034000000130000009C7C41000000000000000000F44C
+      C000F44CC0002400000000000000040000000000000000000000000000006800
+      0000130000009C7C4100000000000000000008866000B0EBBF00D43200000000
+      0000000400000000000000000000000000000000000008866000B0EBBF00B032
+      00000000000000000000000000000000000000000000000000000000060C0C0C
+      370000000000000000000000000037040E0E053D0E3A06000000000000000000
+      00063A121D3B3C3B1D313A06000000000000000000123238343939392F2A3212
+      10000000000000001321242F3534353434342436370000000000000031322828
+      333435353433281F3100000000000000192729282E2F2F2F2E28291C30000000
+      0000000019272B2A2A282828282924272D00000000000000201A22272428292A
+      292B2C1B200000000000000020211A2223232423231B1A252600000000000000
+      0E191A1B1C1D1E1E1C1B1F190E00000000000000101112131415141614171811
+      0A00000000000000000C050D08000000080D0E0F000000000000000000000405
+      060708090A0B0C00000000000000000000000000010203020100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDV1'
+    Wx_IDValue = 1078
+  end
+  object WxLedR1: TWxStaticBitmap
+    Left = 10
+    Top = 366
+    Width = 25
+    Height = 28
+    TabOrder = 57
+    Picture.Data = {
+      07544269746D617036050000424D360500000000000036040000280000000F00
+      0000100000000100080000000000000100000000000000000000000100000000
+      0000D8E9EC005A5E5A002226220012121200222222004A534F00626672003A41
+      42009E969E00C6BECE00D6CAD60086828A004A4A52005E5E6A006A7672004246
+      66009696AE00C6C6DE007A7F9B006A727F00A6A6AE0022264A0044459000757A
+      BB009096D600A6A6E600969ADE004E5496001A1E42002A2F7C003338AE003636
+      9E003C48C0004A55C60052527A00171A5500221EA6002E38C200404CD3004A57
+      DA000A0E5A00353ED1005A65E0006671F4005A6DE600161E66003E3EB6005666
+      EE007A8EF6007B89FB00747AF4008995FE0062668A002A32960099A2FD00A4B9
+      FB009EB0FE00626ED600323A5200424A9E00464E5E0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000010000002D00
+      00002800000096322A00010000002E0000002900000012121200010000002F00
+      0000300000005A5E5A0001000000300000002C00000022262200010000003100
+      00002A00000022222200010000003200000038000000DEC6C600010000003300
+      000037000000AEA6A600010000003400000032000000AE969600010000003500
+      00002D000000D6CAD60001000000360000003300000072766A00010000003700
+      00002E0000004A26220001000000380000003500000072666200010000003900
+      000036000000B63E3E00010000003A0000003B0000009E969E00010000003B00
+      00003A00000008866000FCBFC000481000002B000000421E1A00FFFFFF003D00
+      00000001000000000000CC13C100CC13C100140000000000000008060000C700
+      0000F47166009589DA004AAE3800FB897B00B9A49E0036FDA200F47A7400655A
+      C0003CD13E007C2F2A004642D30040904500E66D5A00665642003AF68E009B7F
+      7A007A75D60090C655004F534A004A4ACE00C6C23800E6A6A6001E22FE009E96
+      5400661E16000E0A8A00627F72008A82860052526A005E551A0096322A001212
+      220022421E0022262200CAD64A0022523A005A5E5A004E46AE0096727600D66E
+      62006662B6003EAEA600DEC6C6004A42DE00969E9600ECE9D8003E3E9E009EDE
+      9A00A414C100A414C1004C0F00000000000008E4C100D8C1110046DED0000F08
+      000008000000BA16DC0000080000C0C1140000000000001F0000000000000000
+      00000000C100FCC1110046EDAC000000000000C0C000C1148000148000000033
+      33000000000000000000000000000000000000000000000D0707050C00000000
+      0000000000133A3417322A3B0F3C0B0000000000121F323338373736391E2200
+      000000001627303637373738302A161200000034352B323336363633312B1E1B
+      0000001D202F2B31333333312B2F291D0000002D2E272F2B303131322C27292D
+      000000281E29272A2B2C2C2A27291E28000000231F2425262626272625241F23
+      0000000F1D1E1F20202121201F1E1D22000000141516171819191A18171B1C00
+      000000000E0F101100000000120F13000000000000060708090A090B0C0D0000
+      0000000000000001020304050000000000000000000000000000000000000000
+      0000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDR1'
+    Wx_IDValue = 1079
+  end
+  object WxLedE1: TWxStaticBitmap
+    Left = 10
+    Top = 369
+    Width = 25
+    Height = 25
+    TabOrder = 58
+    Picture.Data = {
+      07544269746D617006030000424D060300000000000036000000280000000F00
+      00000F0000000100180000000000D00200000000000000000000000000000000
+      0000D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC948D8B83817B7375737B7D7B94918B
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC8B898B6261
+      624A4C4A4140414140414140414A484A626562D8E9ECD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9EC7B797B525552737573A4A5A4D5D2D5EEEAEED5D2D59C9D9C
+      7371735A595A7B7D7BD8E9ECD8E9EC000000D8E9ECD8E9EC6A696A8B8D8BDEDA
+      DEFFFAFFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E69491946A6D6A9C9D9CD8E9EC00
+      0000D8E9EC8B898B8B898BCDCECDF6F6F6FFFFFFFFFFFFFFFFFFF6F6F6FFFFFF
+      FFFFFFCDCACD8385838B8D8BD8E9EC000000D8E9EC7B7D7BACAAACE6E2E6E6E6
+      E6FFFAFFFFFFFFFFFAFFFFFFFFFFFAFFEEEEEEEEEEEEA4A5A47B797BD8E9EC00
+      0000D8E9EC6A6D6ABDBABDD5D2D5E6E2E6EEEEEEF6F2F6F6F6F6F6F6F6EEEEEE
+      E6E6E6DEDADEB4B6B4737573D8E9EC000000D8E9EC626562C5C2C5CDCACDDEDA
+      DEDEDADEEEEAEEE6E2E6E6E6E6E6E2E6D5D2D5D5D2D5C5C2C5626162D8E9EC00
+      0000D8E9EC5A595AB4B2B4ACAAACCDCACDCDCECDD5D6D5DEDADEDEDADECDCECD
+      CDCECDB4B2B4B4B2B45A5D5AD8E9EC000000D8E9EC4144419C999CACAAACB4B2
+      B4C5C2C5C5C2C5C5C6C5C5C2C5B4B6B4B4B6B4A4A5A48B8D8B4A484AD8E9EC00
+      0000D8E9EC4A4C4A6A6D6AACAAACA4A1A4B4B2B4BDBABDB4B6B4C5C2C5BDBABD
+      A4A5A4ACAAAC7371734A4C4AD8E9EC000000D8E9EC9C9D9C4140417B797BBDBA
+      BDD5D6D5DEDADEDEDADED5D6D5D5D2D5BDBABD737573414441949594D8E9EC00
+      0000D8E9ECD8E9EC7375735A595AACAAACDEDEDEEEEAEEFFFAFFEEEEEEDEDADE
+      ACAEAC5A5D5A737573D8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC6A656A5A59
+      5A9C9D9CC5C6C5D5D6D5CDCACDA4A1A44A484A6A6D6AD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9ECD8E9ECD8E9ECA4A5A45A5D5A292829080C08292C295A5D5A
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDE1'
+    Wx_IDValue = 1080
+  end
+  object WxLedV2: TWxStaticBitmap
+    Left = 9
+    Top = 230
+    Width = 28
+    Height = 30
+    TabOrder = 59
+    Picture.Data = {
+      07544269746D61709E050000424D9E0500000000000036040000280000001100
+      0000120000000100080000000000680100000000000000000000000100000000
+      0000D8E9EC005A5A5A0022262200020A0A0062645E004242420087847E00C6BE
+      BE00CBD3CB00C6B2C600969296002736250072726A00829D85003A4E3B006A66
+      62009A9E9E001E3E22003E7052006A9C7A0087C6A6009EDABE009ED6B6006AAA
+      7A003A6A4200265E2C0022934A00379B55003DA967004296720042AE75004296
+      5A000A3612002A82420025A9520034B3680040C07A002A7A3A00163E160036AE
+      5A0058DE9D0040CF7F0054D093002EC26A0022A65A0012521A006AE6B20078F4
+      BD002A6A320047795700358855005AEEA3007EFEC4009AFAC600428652008A8D
+      870056C69E0088FDD20047654F0062C29E006ADEBE003E574600000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000009C7C
+      4100000000000000000008866000B0EBBF00DC34000000000000000000000000
+      000000000000000000009C000000130000009C7C41000000000000000000544B
+      C000544BC000240000000000000000000000000000000000000000000000AC0A
+      0000130000009C7C4100000000000000000008866000B0EBBF00743400000000
+      0000000000000000000000000000000000000000000008866000B0EBBF005034
+      000000000000BC4BC000BC4BC000C00000000000000000000000000000000000
+      00000000000000000000E04BC000E04BC0009C00000000000000F04BC000F04B
+      C000240000000400000000000000000000000000000000000000340000001300
+      00009C7C41000000000000000000244CC000244CC00024000000000000000000
+      000000040000000000000000000068000000130000009C7C4100000000000000
+      0000584CC000584CC00024000000000040000000000000000000000000000000
+      0000D0000000130000009C7C4100000000000000000008866000B0EBBF007033
+      000000000000000000000001000000000000000000000000000008866000B0EB
+      BF004C33000000000000C04CC000C04CC0002400000080000000000000000000
+      0000000000000000000034000000130000009C7C41000000000000000000F44C
+      C000F44CC0002400000000000000040000000000000000000000000000006800
+      0000130000009C7C4100000000000000000008866000B0EBBF00D43200000000
+      0000000400000000000000000000000000000000000008866000B0EBBF00B032
+      00000000000000000000000000000000000000000000000000000000060C0C0C
+      370000000000000000000000000037040E0E053D0E3A06000000000000000000
+      00063A121D3B3C3B1D313A06000000000000000000123238343939392F2A3212
+      10000000000000001321242F3534353434342436370000000000000031322828
+      333435353433281F3100000000000000192729282E2F2F2F2E28291C30000000
+      0000000019272B2A2A282828282924272D00000000000000201A22272428292A
+      292B2C1B200000000000000020211A2223232423231B1A252600000000000000
+      0E191A1B1C1D1E1E1C1B1F190E00000000000000101112131415141614171811
+      0A00000000000000000C050D08000000080D0E0F000000000000000000000405
+      060708090A0B0C00000000000000000000000000010203020100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDV2'
+    Wx_IDValue = 1083
+  end
+  object WxLedR3: TWxStaticBitmap
+    Left = 13
+    Top = 85
+    Width = 25
+    Height = 28
+    TabOrder = 60
+    Picture.Data = {
+      07544269746D617036050000424D360500000000000036040000280000000F00
+      0000100000000100080000000000000100000000000000000000000100000000
+      0000D8E9EC005A5E5A002226220012121200222222004A534F00626672003A41
+      42009E969E00C6BECE00D6CAD60086828A004A4A52005E5E6A006A7672004246
+      66009696AE00C6C6DE007A7F9B006A727F00A6A6AE0022264A0044459000757A
+      BB009096D600A6A6E600969ADE004E5496001A1E42002A2F7C003338AE003636
+      9E003C48C0004A55C60052527A00171A5500221EA6002E38C200404CD3004A57
+      DA000A0E5A00353ED1005A65E0006671F4005A6DE600161E66003E3EB6005666
+      EE007A8EF6007B89FB00747AF4008995FE0062668A002A32960099A2FD00A4B9
+      FB009EB0FE00626ED600323A5200424A9E00464E5E0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000010000002D00
+      00002800000096322A00010000002E0000002900000012121200010000002F00
+      0000300000005A5E5A0001000000300000002C00000022262200010000003100
+      00002A00000022222200010000003200000038000000DEC6C600010000003300
+      000037000000AEA6A600010000003400000032000000AE969600010000003500
+      00002D000000D6CAD60001000000360000003300000072766A00010000003700
+      00002E0000004A26220001000000380000003500000072666200010000003900
+      000036000000B63E3E00010000003A0000003B0000009E969E00010000003B00
+      00003A00000008866000FCBFC000481000002B000000421E1A00FFFFFF003D00
+      00000001000000000000CC13C100CC13C100140000000000000008060000C700
+      0000F47166009589DA004AAE3800FB897B00B9A49E0036FDA200F47A7400655A
+      C0003CD13E007C2F2A004642D30040904500E66D5A00665642003AF68E009B7F
+      7A007A75D60090C655004F534A004A4ACE00C6C23800E6A6A6001E22FE009E96
+      5400661E16000E0A8A00627F72008A82860052526A005E551A0096322A001212
+      220022421E0022262200CAD64A0022523A005A5E5A004E46AE0096727600D66E
+      62006662B6003EAEA600DEC6C6004A42DE00969E9600ECE9D8003E3E9E009EDE
+      9A00A414C100A414C1004C0F00000000000008E4C100D8C1110046DED0000F08
+      000008000000BA16DC0000080000C0C1140000000000001F0000000000000000
+      00000000C100FCC1110046EDAC000000000000C0C000C1148000148000000033
+      33000000000000000000000000000000000000000000000D0707050C00000000
+      0000000000133A3417322A3B0F3C0B0000000000121F323338373736391E2200
+      000000001627303637373738302A161200000034352B323336363633312B1E1B
+      0000001D202F2B31333333312B2F291D0000002D2E272F2B303131322C27292D
+      000000281E29272A2B2C2C2A27291E28000000231F2425262626272625241F23
+      0000000F1D1E1F20202121201F1E1D22000000141516171819191A18171B1C00
+      000000000E0F101100000000120F13000000000000060708090A090B0C0D0000
+      0000000000000001020304050000000000000000000000000000000000000000
+      0000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDR3'
+    Wx_IDValue = 1084
+  end
+  object WxLedV3: TWxStaticBitmap
+    Left = 13
+    Top = 88
+    Width = 27
+    Height = 30
+    TabOrder = 61
+    Picture.Data = {
+      07544269746D61709E050000424D9E0500000000000036040000280000001100
+      0000120000000100080000000000680100000000000000000000000100000000
+      0000D8E9EC005A5A5A0022262200020A0A0062645E004242420087847E00C6BE
+      BE00CBD3CB00C6B2C600969296002736250072726A00829D85003A4E3B006A66
+      62009A9E9E001E3E22003E7052006A9C7A0087C6A6009EDABE009ED6B6006AAA
+      7A003A6A4200265E2C0022934A00379B55003DA967004296720042AE75004296
+      5A000A3612002A82420025A9520034B3680040C07A002A7A3A00163E160036AE
+      5A0058DE9D0040CF7F0054D093002EC26A0022A65A0012521A006AE6B20078F4
+      BD002A6A320047795700358855005AEEA3007EFEC4009AFAC600428652008A8D
+      870056C69E0088FDD20047654F0062C29E006ADEBE003E574600000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000009C7C
+      4100000000000000000008866000B0EBBF00DC34000000000000000000000000
+      000000000000000000009C000000130000009C7C41000000000000000000544B
+      C000544BC000240000000000000000000000000000000000000000000000AC0A
+      0000130000009C7C4100000000000000000008866000B0EBBF00743400000000
+      0000000000000000000000000000000000000000000008866000B0EBBF005034
+      000000000000BC4BC000BC4BC000C00000000000000000000000000000000000
+      00000000000000000000E04BC000E04BC0009C00000000000000F04BC000F04B
+      C000240000000400000000000000000000000000000000000000340000001300
+      00009C7C41000000000000000000244CC000244CC00024000000000000000000
+      000000040000000000000000000068000000130000009C7C4100000000000000
+      0000584CC000584CC00024000000000040000000000000000000000000000000
+      0000D0000000130000009C7C4100000000000000000008866000B0EBBF007033
+      000000000000000000000001000000000000000000000000000008866000B0EB
+      BF004C33000000000000C04CC000C04CC0002400000080000000000000000000
+      0000000000000000000034000000130000009C7C41000000000000000000F44C
+      C000F44CC0002400000000000000040000000000000000000000000000006800
+      0000130000009C7C4100000000000000000008866000B0EBBF00D43200000000
+      0000000400000000000000000000000000000000000008866000B0EBBF00B032
+      00000000000000000000000000000000000000000000000000000000060C0C0C
+      370000000000000000000000000037040E0E053D0E3A06000000000000000000
+      00063A121D3B3C3B1D313A06000000000000000000123238343939392F2A3212
+      10000000000000001321242F3534353434342436370000000000000031322828
+      333435353433281F3100000000000000192729282E2F2F2F2E28291C30000000
+      0000000019272B2A2A282828282924272D00000000000000201A22272428292A
+      292B2C1B200000000000000020211A2223232423231B1A252600000000000000
+      0E191A1B1C1D1E1E1C1B1F190E00000000000000101112131415141614171811
+      0A00000000000000000C050D08000000080D0E0F000000000000000000000405
+      060708090A0B0C00000000000000000000000000010203020100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDV3'
+    Wx_IDValue = 1085
+  end
+  object WxLedE3: TWxStaticBitmap
+    Left = 13
+    Top = 93
+    Width = 25
+    Height = 25
+    TabOrder = 62
+    Picture.Data = {
+      07544269746D617006030000424D060300000000000036000000280000000F00
+      00000F0000000100180000000000D00200000000000000000000000000000000
+      0000D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC948D8B83817B7375737B7D7B94918B
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC8B898B6261
+      624A4C4A4140414140414140414A484A626562D8E9ECD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9EC7B797B525552737573A4A5A4D5D2D5EEEAEED5D2D59C9D9C
+      7371735A595A7B7D7BD8E9ECD8E9EC000000D8E9ECD8E9EC6A696A8B8D8BDEDA
+      DEFFFAFFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E69491946A6D6A9C9D9CD8E9EC00
+      0000D8E9EC8B898B8B898BCDCECDF6F6F6FFFFFFFFFFFFFFFFFFF6F6F6FFFFFF
+      FFFFFFCDCACD8385838B8D8BD8E9EC000000D8E9EC7B7D7BACAAACE6E2E6E6E6
+      E6FFFAFFFFFFFFFFFAFFFFFFFFFFFAFFEEEEEEEEEEEEA4A5A47B797BD8E9EC00
+      0000D8E9EC6A6D6ABDBABDD5D2D5E6E2E6EEEEEEF6F2F6F6F6F6F6F6F6EEEEEE
+      E6E6E6DEDADEB4B6B4737573D8E9EC000000D8E9EC626562C5C2C5CDCACDDEDA
+      DEDEDADEEEEAEEE6E2E6E6E6E6E6E2E6D5D2D5D5D2D5C5C2C5626162D8E9EC00
+      0000D8E9EC5A595AB4B2B4ACAAACCDCACDCDCECDD5D6D5DEDADEDEDADECDCECD
+      CDCECDB4B2B4B4B2B45A5D5AD8E9EC000000D8E9EC4144419C999CACAAACB4B2
+      B4C5C2C5C5C2C5C5C6C5C5C2C5B4B6B4B4B6B4A4A5A48B8D8B4A484AD8E9EC00
+      0000D8E9EC4A4C4A6A6D6AACAAACA4A1A4B4B2B4BDBABDB4B6B4C5C2C5BDBABD
+      A4A5A4ACAAAC7371734A4C4AD8E9EC000000D8E9EC9C9D9C4140417B797BBDBA
+      BDD5D6D5DEDADEDEDADED5D6D5D5D2D5BDBABD737573414441949594D8E9EC00
+      0000D8E9ECD8E9EC7375735A595AACAAACDEDEDEEEEAEEFFFAFFEEEEEEDEDADE
+      ACAEAC5A5D5A737573D8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC6A656A5A59
+      5A9C9D9CC5C6C5D5D6D5CDCACDA4A1A44A484A6A6D6AD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9ECD8E9ECD8E9ECA4A5A45A5D5A292829080C08292C295A5D5A
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDE3'
+    Wx_IDValue = 1086
+  end
+  object WxLedE2: TWxStaticBitmap
+    Left = 12
+    Top = 232
+    Width = 25
+    Height = 25
+    TabOrder = 63
+    Picture.Data = {
+      07544269746D617006030000424D060300000000000036000000280000000F00
+      00000F0000000100180000000000D00200000000000000000000000000000000
+      0000D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC948D8B83817B7375737B7D7B94918B
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC8B898B6261
+      624A4C4A4140414140414140414A484A626562D8E9ECD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9EC7B797B525552737573A4A5A4D5D2D5EEEAEED5D2D59C9D9C
+      7371735A595A7B7D7BD8E9ECD8E9EC000000D8E9ECD8E9EC6A696A8B8D8BDEDA
+      DEFFFAFFFFFFFFFFFFFFFFFFFFFFFFFFE6E6E69491946A6D6A9C9D9CD8E9EC00
+      0000D8E9EC8B898B8B898BCDCECDF6F6F6FFFFFFFFFFFFFFFFFFF6F6F6FFFFFF
+      FFFFFFCDCACD8385838B8D8BD8E9EC000000D8E9EC7B7D7BACAAACE6E2E6E6E6
+      E6FFFAFFFFFFFFFFFAFFFFFFFFFFFAFFEEEEEEEEEEEEA4A5A47B797BD8E9EC00
+      0000D8E9EC6A6D6ABDBABDD5D2D5E6E2E6EEEEEEF6F2F6F6F6F6F6F6F6EEEEEE
+      E6E6E6DEDADEB4B6B4737573D8E9EC000000D8E9EC626562C5C2C5CDCACDDEDA
+      DEDEDADEEEEAEEE6E2E6E6E6E6E6E2E6D5D2D5D5D2D5C5C2C5626162D8E9EC00
+      0000D8E9EC5A595AB4B2B4ACAAACCDCACDCDCECDD5D6D5DEDADEDEDADECDCECD
+      CDCECDB4B2B4B4B2B45A5D5AD8E9EC000000D8E9EC4144419C999CACAAACB4B2
+      B4C5C2C5C5C2C5C5C6C5C5C2C5B4B6B4B4B6B4A4A5A48B8D8B4A484AD8E9EC00
+      0000D8E9EC4A4C4A6A6D6AACAAACA4A1A4B4B2B4BDBABDB4B6B4C5C2C5BDBABD
+      A4A5A4ACAAAC7371734A4C4AD8E9EC000000D8E9EC9C9D9C4140417B797BBDBA
+      BDD5D6D5DEDADEDEDADED5D6D5D5D2D5BDBABD737573414441949594D8E9EC00
+      0000D8E9ECD8E9EC7375735A595AACAAACDEDEDEEEEAEEFFFAFFEEEEEEDEDADE
+      ACAEAC5A5D5A737573D8E9ECD8E9EC000000D8E9ECD8E9ECD8E9EC6A656A5A59
+      5A9C9D9CC5C6C5D5D6D5CDCACDA4A1A44A484A6A6D6AD8E9ECD8E9ECD8E9EC00
+      0000D8E9ECD8E9ECD8E9ECD8E9ECA4A5A45A5D5A292829080C08292C295A5D5A
+      D8E9ECD8E9ECD8E9ECD8E9ECD8E9EC000000}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXLEDE2'
+    Wx_IDValue = 1087
+  end
+  object WxStaticText8: TWxStaticText
+    Left = 443
+    Top = 609
+    Width = 4
+    Height = 4
+    TabOrder = 66
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT8'
+    Wx_IDValue = 1090
+    Wx_LabelStyle = []
+  end
+  object WxStaticText13: TWxStaticText
+    Left = 485
+    Top = 38
+    Width = 4
+    Height = 4
+    TabOrder = 67
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT13'
+    Wx_IDValue = 1091
+    Wx_LabelStyle = []
+  end
+  object WxStaticText32: TWxStaticText
+    Left = 420
+    Top = 598
+    Width = 4
+    Height = 4
+    TabOrder = 68
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXSTATICTEXT32'
+    Wx_IDValue = 1092
+    Wx_LabelStyle = []
+  end
+  object WxStaticBitmap1: TWxStaticBitmap
+    Left = 441
+    Top = 1
+    Width = 50
+    Height = 38
+    TabOrder = 69
+    Picture.Data = {
+      07544269746D6170E61D0000424DE61D00000000000036000000280000003200
+      0000260000000100200000000000B01D00000000000000000000000000000000
+      0000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FEFEFE00FFFFFF00FEFDFD00FCFBFA00FFFFFF00C3B39C00DCD3C57FD4C9
+      B87FEEEAE300FEFEFE00FEFDFD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FEFEFE00FFFFFF00FDFDFD00FDFDFD00FFFFFF00AC967700BEAD
+      9500CBBEAA7FBCAA913EECE8E000FFFFFF00FEFCFC00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FDFDFD00FEFEFE00FEFEFE00A38A
+      6700A1886400AE9879FCBFAE9644B8A68A00F3F0EC00FEFEFE00FDFDFD00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FDFDFC00FEFEFE00FDFC
+      FC009A7F58007F5D2C009A805AFFA28A66FFAC977700CFC2B07FFFFFFF00FDFC
+      FC00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FDFDFC00FEFE
+      FE00FDFCFC00997E57007955210091744AFF836333FF95795029A28A6600FFFF
+      FF00FDFCFC00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FEFEFE00FEFEFE00FEFEFE00FEFEFE00FEFEFD00FEFD
+      FD00FEFDFD00FEFEFD00FEFEFE00FEFEFE00FEFEFE00FEFEFE00FEFEFE00FFFF
+      FF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FDFC
+      FC00FFFFFF00FCFBFA00997D56007853200093764DFF6F4911FF907348FF7D5A
+      2900EFEAE400FEFEFE00FDFDFC00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFDFD00FCFCFB00FEFE
+      FE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FEFD
+      FD00FDFDFC00FDFDFC00FEFEFD00FEFEFD00FEFEFE00FEFEFE00FEFEFE00FFFF
+      FF00FCFCFC00FFFFFF00F8F7F40093774D0079552209967951FF663D03FF9478
+      4FFF78542006C4B59F00FFFFFF00FCFCFB00FEFEFE00FEFEFE00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FCFCFB00FFFF
+      FF00FFFFFF00FDFDFD00EDE8E100E5DED500E6DFD600E8E3DA00F0ECE700F6F3
+      F000FDFDFD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FEFEFE00FCFCFB00FFFFFF00F5F2EF008D6E4300744F1A11907248FF6941
+      07FF795522FF7F5D2C1594774F00FDFDFC00FCFCFB00FEFDFD00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FEFEFE00FFFFFF00FEFEFE00FDFDFC00FEFEFD00FEFEFE00FEFE
+      FE00FFFFFF00F2EEEA00B5A18500967A520094784FC3A48C69FFA28965FFA188
+      64FFAE9879FFAC9676D9BBA88EC3CABCA87FD0C3B27FDDD5C87FE8E3DB00F1EE
+      E900F6F5F200FDFDFD00FEFEFD00FFFFFF00F5F2EF008A6B3E008D6F441F9072
+      48FF684006FF6E4810FF8B6C40FF724D1700E7E0D700FEFEFE00FDFDFC00FEFF
+      FF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FEFEFE00FEFEFE00FFFFFF00FDFDFC00FEFEFE00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C8BAA57F866638007B5826BC8B6D40FF87683AFF8362
+      32FF826131FF876739FF8C6E42FF856436FF8A6B3EFF93774EFF957951FFAB95
+      75FFB7A489FFD3C8B77FD3C7B77FDAD0C27FE5DFD500E1DACE008F7247007C59
+      27BC8D6E42FF6C440CFF683F05FF8C6E41FF7E5C2B0BB29E8000FFFFFF00FCFC
+      FB00FEFEFE00FFFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FEFEFE00FCFCFC00FFFFFF00FFFF
+      FF00DCD3C67FEBE5DE00E9E4DC00F8F7F500684007008F7246FD866637FF8362
+      33FF997E574AAC9777FFA68E6C76907349008D6F44007D5A29008A6A3D2D8361
+      324A856436FF7B5825FF7F5D2DFF987D56FFBCAB91FFD1C5B47FD1C6B47F9E85
+      61FF896A3DB6967B53FF673E04FF6C450CFF75501BFF907348FF84633400F5F2
+      EF00FDFCFC00FDFDFC00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FEFEFE00FDFDFC00FFFFFF00FFFF
+      FF00E1D9CE009D845E00B29E8100CABDA97FD9CFC17FF9F8F500997F58008362
+      34FF977B53FFCBBEAA7FCABCA87FD6CCBD7FC5B6A000C4B59F00C6B7A100B4A1
+      85009E845F008B6C4000815F2E007956220092754B51856435FF7A5623FF9477
+      4EFFAA9474FFC7B8A37F856436FF684006FF6F4911FF6A4209FF907247FF7853
+      1F00CBBDAA7FFFFFFF00FDFDFD00FEFEFE00FEFEFE00FFFFFF00FEFEFE00FEFE
+      FE00FFFFFF00FFFFFF00FEFEFE00FEFEFE00FFFFFF00FEFEFD00FCFCFB00FFFF
+      FF00FBFAF900B09B7E0084633400A08662AF9F8561FFB5A285FFC6B7A100F3F1
+      ED008F724800795521FFAC977700D6CCBD7FD2C8B77FD4C9BA7FE1D9CE00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00F2EFEB00D7CCBD7FAC9575008E6F44008969
+      3D00A68E6C0087673958795522FF7B5725FF6A4209FF6E4710FF6C450DFF6F49
+      12FFB5A286FFBBA98FA8E0D8CD00EDE8E100F9F8F500FFFFFF00FFFFFF00FEFE
+      FE00FEFEFE00FFFFFF00FEFEFE00FEFEFE00FFFFFF00FEFEFE00FDFCFC00FFFF
+      FF00FFFFFF00D4C9B97F8666370081603000997E57BD8D6E43FFA99271E5987C
+      5500B7A38900FBFAF900826131007B5825FF93764D00D5CBBB7FD5CABA7FD8CE
+      BF7FFFFFFF00FEFEFD00FCFCFB00FDFCFC00FEFEFE00FFFFFF00FFFFFF00FFFF
+      FF00F7F5F300CBBDAA7F826131008E6F433488683BFF653C02FF6F4810FF6E48
+      10FF694107FF9F8560FFB9A68B00CCC0AD7FCCBFAD7FD6CCBC7FDFD6CA14EAE5
+      DD00FBFAF800FFFFFF00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FEFDFD00FDFC
+      FC00FFFFFF00F3F0EB00A38B680077531F00917449C0826131FF8C6E42FF9C82
+      5C5E82613100C2B29A00FFFFFF00FDFDFD008464350075511BFF997F580DD4C9
+      B97FCEC1AE7FDED5C97FFFFFFF00FDFDFD00FEFEFE00FEFEFE00FEFEFE00FEFE
+      FD00FCFBFA00FDFCFB00FAF8F700977B53007E5C2B388E7045FF6B430BFF6E47
+      10FF6E470FFF6D460EFF6A4209FF896A3DFFB49F83FFD4C9B97FD1C5B47FCABC
+      A77FCCBFAC7FD8CEBF7FE3DBD11FECE7DF00FCFBFA00FFFFFF00FEFEFE00FCFC
+      FB00FFFFFF00FFFFFF00CBBDAA7F805F2F008261313E917449FF795523FF987C
+      55FF9D845E0082613200D9CFC17FFFFFFF00FDFCFC00FEFEFE00AB9575007A57
+      24FFBAA88EFFD3C8B87FCBBDAA7FD7CDBE7FF7F5F200FFFFFF00FDFDFD00FFFF
+      FF00FFFFFF00FDFDFC00FEFEFD00FBFBF900917349007A55223C92744AFF6941
+      08FF6D460EFF6E470FFF6E470EFF6B440BFF93774EFF91744A6C7A5724FF997E
+      57FFCBBCA97FD1C6B57FD1C5B47FD1C6B47FCEC1AF7FD7CDBE7FE4DDD300F2EF
+      EA00FFFFFF00FFFFFF00F0EBE6009F856000734D19009C825CC3805E2FFF7955
+      23FFA28965D0846336009A7F5900F4F1ED00FFFFFF00FDFCFB00FFFFFF00FFFF
+      FF00B09C7E008B6C3FFA92754BFFD8CDBF7FCABCA87FD1C5B37FE8E2D800FDFC
+      FC00FEFEFE00FEFEFE00FDFDFD00FEFEFD00FEFEFE009A805A008261313F9579
+      50FF684006FF6D460EFF6E470FFF6E470FFF694107FF81602FFFA68E6C007B57
+      240090734800866638737C5927FFB8A58AFFDAD1C37FD3C8B87FCEC1AF7FCBBE
+      AB7FD7CDBE7FE3DCD22EF0ECE600C5B49F007C592800805E2D4A907248FF6E47
+      11FF8D6F44FFAC9777737B582600BAA88D00FFFFFF00FFFFFF00FDFCFC00FFFF
+      FF00FEFEFE00FEFEFE0078552100A891700075501CFFB8A58AFFD6CBBB7FCBBE
+      AA7FE1D9CE21EDE8E200FFFFFF00FDFDFD00FDFDFC00FDFDFD009F8560006E47
+      1000977C54FF6B440BFF6D460EFF6E470FFF6D460EFF6D460EFF6E4710FF8868
+      3BFF8A6B3E00CEC2AF7F866637008463340093764D00795521F59D835EFFD4CA
+      BA7FD2C6B67FD4C9B97FD4CABA7FDBD1C47FA99372B2704A1400997E58CA7D5A
+      29FF704A14FFA78F6EFF9E845E0088683A00DED5C87FFFFFFF00FDFDFC00FEFE
+      FD00FFFFFF00FEFEFE00FFFFFF00FFFFFF00B4A083008F7147009E845FEB7A57
+      24FFD4C8B87FD8CEBF7FD5C9BA7FE2DAD000EDE9E100FFFFFF00FFFFFF00A48C
+      690083633343977B54FF673E04FF6D460EFF6E470FFF6D460EFF6E470FFF6840
+      06FF836232FF8B6C3FD7AD977800FFFFFF00F7F4F100AC96770075501B009174
+      4A00836233F088683BFFCCBFAC7FD2C7B77FAB957500A38A6700BAA98FD2896A
+      3DFF6A430AFF866638FFAC9676C286653700A58E6B00F8F6F300FFFFFF00FDFC
+      FB00FEFEFE00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00A28A
+      67009A80590088683BFF907248FFDFD6CA19CDC0AE7FD6CBBC7FE1DACE00F9F7
+      F500B19C7F006D460E00977B53FF6F4912FF6C450DFF6E470FFF6D460EFF6E46
+      0EFF6E4810FF684006FF997D56FF87673A00E7E2D900FDFDFD00FEFEFE00FFFF
+      FF00D5CBBB7F7E5C2A008B6D41008E7045717F5D2BFFA18764FF795522228464
+      35D5744F1AFF663D03FF9A7F59FFA891707B88693B00CBBEAA7FFFFFFF00FFFF
+      FF00FDFDFC00FFFFFF00FEFEFE00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FDFDFC00F2EFEA007F5C2B0094784F007D5B29FF9B805AFFDFD7CB1CCFC2
+      B07FE0D8CCFFAF9A7C00714B1500957850FF6E4810FF6B440BFF6E470FFF6D46
+      0EFF6E470FFF6E470FFF6B430BFF785420FF88683BCDA0876300FFFFFF00FDFD
+      FC00FDFDFD00FAFAF800FFFFFF00F8F6F400987D5500977C54008C6E42007753
+      1FFF896A3CFF6E4811FF815F2EFFAE9A7BBBBDAC9300AE9879FFC9BBA77FEFEB
+      E600FEFEFE00FDFDFC00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FBFBFA00FFFFFF00DED6C97F744F1A00907248007853
+      1FFFAB9574FFE2DBD01FC9BBA67FB09A7DFF9D825DFF724C16FF6B430AFF6E47
+      10FF6D460EFF6E470FFF6E470FFF6D470FFF694108FF836233FF7D5B2A00D4C8
+      B87FFEFEFD00FBFAF800FFFFFF00FFFFFF00FAF9F700C0B098008B6C41008463
+      335B8D6E42FF6F4912FF603500FF866738FFA89170A1B39E8200C5B59E00D9CE
+      C07FD1C5B47FD9D0C27FEEE9E300FFFFFF00FEFEFE00FEFEFE00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFFFF00FCFCFB00FFFFFF00D3C7
+      B77F714C150094774E00775320FF9E845FFF91744B21A28A67C8724C16FF6A43
+      0AFF6E4810FF6D460EFF6E470FFF6E470FFF6E470FFF6E4710FF694108FF9275
+      4CFF8E704500F5F2EF00FFFFFF00FFFFFF00FCFCFB00C7B8A47F88683B007753
+      1F00977C54ED846334FF694006FF7B5826FF9579519B7D5A28FF967B53FFD1C5
+      B47FD6CBBB7FCCBFAC7FD0C4B47FD7CCBD7FE1D9CE3DF5F2EE00FFFFFF00FDFD
+      FD00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFE
+      FE00FCFBFA00FFFFFF00D1C5B37F76521E009F866200785421FF866537FF724D
+      17FF6A4209FF6E4710FF6D460EFF6E470FFF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6D470FFF846233FFA8906F00FFFFFF00F0ECE600C3B29C008A6C3F007D5A
+      2A00907349F98B6C40FF683F05FF704A13FF9F8561FF9C825C277C5A28009C82
+      5C007A5623FFC6B6A1FFE1DACE2AD0C4B37FD6CCBD7FD4C9B87FD8CEBF7FE7E0
+      D800FAF8F700FEFEFE00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FEFEFE00FFFFFF00FEFEFF00FBFAFA00FFFFFF00D0C4B27F78532000997E
+      57B86E470FFF6C440CFF6E470FFF6D460EFF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6E470FFF6E4810FF684006FF94784FFFB9A78C46A1886500856335007A57
+      25588A6B3EFF8D6F43FF704A13FF653C00FF907349FFAA9474B682603000B6A3
+      8700B7A48800846334009C815B0075501CFFD3C8B77FE6DED500D3C9B97FD6CB
+      BB7FCFC1AF7FE0D7CCFFEEEAE400FEFEFE00FEFEFE00FEFEFE00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FEFEFE00FFFFFF00FDFDFD00FDFDFD00F9F8F6009478
+      4F00805E2D3E836333FF6C440CFF6E470FFF6D460EFF6E470FFF6E470FFF6E47
+      0FFF6E470FFF6E470FFF6E470FFF6E470FFF6C440CFF724D17FF8F7247FF9478
+      50FF866638FF836232FF704B14FF613700FF7C5927FFAC9777B5997E57008B6C
+      4000D5CBBB7FFFFFFF00FFFFFF00A18864009B815B008C6D4169907247FFE2DB
+      D0A5E9E4DB00D0C4B27FD2C6B67FD4C9B87FE9E4DC37FDFDFC00FFFFFF00FDFD
+      FD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FCFCFA00FFFF
+      FF00A38A67007A572400957951FF684005FF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6D460EFF6E470FFF6C45
+      0CFF6A4209FF6D460EFF6C440CFF643A00FF714B15FF9E8560FFA28865B68D6F
+      4300B7A48800F6F5F200FFFFFF00FCFBFB00FDFDFC00F7F6F30095795000B7A5
+      8A0076511CFFBBA88EFFF0ECE727E5DED400CCBFAC7FCBBDA97FD6CCBC7FF7F6
+      F300FEFEFE00FEFDFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFFFF00FCFC
+      FB00FFFFFF00C0AF970076511D0092754CFF6A430AFF6D460EFF6E470FFF6D47
+      0EFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6D460EFF6E4710FF704A12FF6A430AFF694208FF88693BFFAD9879B59C82
+      5C00967B5300E3DBD100FFFFFF00FFFFFF00FDFCFC00FFFFFF00FCFCFC00FFFF
+      FF00DAD0C27FA68E6C00A087626A805E2DFFD0C3B27FF3F0EC00D3C8B87FC8B9
+      A57FC8BAA67FF2EFEA00FFFFFF00FEFEFD00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FBFAF900FFFFFF00E0D8CD00724D1700997E56E0734E19FF6B430AFF6E47
+      0FFF6D460EFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6D460EFF6E470FFF6E470FFF6B430AFF663C02FF7B5725FFAE9879F89F85
+      610093764D00CDC0AD7FFFFFFF00FFFFFF00FCFCFB00FDFDFD00FEFEFE00FEFE
+      FE00FEFEFE00FCFCFC00FFFFFF00AE997A00A38A67007D5A28FF9A7F58FFECE7
+      DF00E4DDD200C9BBA67FCABDA97FEDE9E300FFFFFF00FEFDFC00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FCFBFA00F6F4F00085643500846334307D5A28FF6940
+      06FF6E4810FF6D460EFF6E470FFF6E470FFF6E470FFF6E470FFF6E470FFF6E47
+      0FFF6D460EFF6E470FFF6F4811FF6C450CFF6B440BFF7A5623FFA18864FFB4A1
+      84CACDC0AE7FBCAB9236D5CBBB7FEEEAE400F1EEE900F9F8F600FEFEFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FDFCFC00FDFDFC00ECE7E100A18965008362
+      33858D6F43FFC9BBA67FD4C8B87FCDC0AD7FCDC0AD7FEBE6DF00FEFEFE00FEFC
+      FC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00AC9677007D5A29008C6E
+      42FF673F05FF6F4810FF6D460EFF6E470FFF6E470FFF6E470FFF6E470FFF6D46
+      0EFF6D460EFF6E470FFF6F4811FF6C450CFF673E04FF78541FFF6F4912FF8E70
+      45FFC0AF97D6AD977700C8B9A57FD3C9B97FCBBEAB7FC8BBA77FCFC3B17FD3C7
+      B77FDDD5C97FEAE5DD00F1EEEA00F8F7F500FBFBFA00FEFEFE00FFFFFF00FEFE
+      FE00957950008F7147859F8661FFCEC2AF7FD2C6B57FD1C5B47FD3C8B77FECE8
+      E100FFFFFF00FDFDFD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C4B49E007753
+      1F008A6B3FEE6E470FFF6D460EFF6D460EFF6E470FFF6E470FFF6E470FFF6D46
+      0EFF6E470FFF6E470FFF6F4811FF6C450DFF673E03FF744F1AFF977C54FF8A6B
+      3E938A6B3F3D896A3EFF7D5B29FF8D6E43FFA58D6BFFBEAD9529CBBDAA7FCDC0
+      AE7FCCBFAC7FCEC2AF7FCEC1AE7FCEC1AF7FCEC2B07FD4CABB7FD6CCBC7FDBD2
+      C57FD7CCBD7F9E8460008261300084643598A28965FFD1C6B47FD3C8B77FD1C6
+      B57FD5CABA7FFBFAF900FEFEFE00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF006F4912009C825CF57A5723FF6A4209FF6E470FFF6E470FFF6E470FFF6D46
+      0FFF6E470FFF6F4810FF6F4810FF6C440CFF683F05FF734E19FF93774EFFA68F
+      6C859C825D00A99270008F724800815F2F008565370089693CE3826132FF8261
+      32FF93774EFF997E57FFAC967622B09C7E00C0B09900C8BAA57FC4B49EDEC3B5
+      9EDEC6B8A37FC4B5A0FFBBAA90FFA38B69FF8E6F45FF7B5825FFC3B39CFFCEC1
+      AF7FD0C3B27FD1C5B47FF5F3EF00FFFFFF00FEFEFD00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0087673900917349FF683F06FF6E4810FF6D460EFF6E47
+      0FFF6E470FFF6F4810FF6E470FFF694107FF684006FF76511DFF957950FFB09A
+      7CE59B805900A48C6A00CDBFAD7FFFFFFF00FCFCFB00CEC1AE7F9A7F57008261
+      310086653700876739E5866638FF846434FF836131FF866638FF826132FF997E
+      57FF9D835DFF87673A1B9072471BA48C6AB6A28965FF907349FF795623FFA38A
+      67FFA68E6C00D1C5B47FE7E0D700FBFAF900FFFFFF00FEFEFE00FFFFFF00FEFE
+      FE00FFFFFF00FFFFFF00FFFFFF00FFFFFF009A7F5800785420FF6C440BFF6E48
+      10FF6F4811FF6E470FFF6C450CFF6A4108FF6B440BFF815F2FFF9F8661FF9E84
+      6068A8917000AD987900CEC1AE7FFDFDFC00FFFFFF00FEFEFE00FEFFFF00FFFF
+      FF00FFFFFF00E5DFD500B8A5890094784F008767380082613100826131008E70
+      44EB866537FF8A6B3EFF88683AFF846435FF826131FF856536FF816030FF9275
+      4BFF9C815CEB744F1A00C0AF9800FFFFFF00FFFFFF00FFFFFF00FEFEFE00FFFF
+      FF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0088693B006D46
+      0DFF694007FF6A4209FF684006FF6C440CFF734E18FF88683BFFA58D6AF2B9A6
+      8B00A2896600AB947400E0D8CD00FFFFFF00FFFFFF00FFFFFF00FDFCFC00FEFE
+      FE00FEFEFE00FDFDFC00FEFDFD00FFFFFF00FFFFFF00FFFFFF00E6E0D600C6B7
+      A27FA99271009A7F5800907348009A7F58008E71450088683B008C6E42009F85
+      6100B8A58A00A68F6D00A2896600E2DACF00FFFFFF00FDFDFD00FEFDFD00FEFE
+      FE00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00A087640088683AFF7C5926FF7E5C2AFF8B6D40FFA28A66FAA289653CA48D
+      6A00BAA78D00C6B7A100E7E1D800FFFFFF00FFFFFF00FEFEFD00FDFDFC00FEFE
+      FE00FFFFFF00FEFEFE00FEFEFE00FEFEFE00FEFEFE00FEFDFD00FDFCFB00FEFE
+      FE00FFFFFF00FFFFFF00FFFFFF00FDFDFC00EFEAE500E3DBD000DFD7CB00DFD7
+      CB00E6DFD500EDE8E100EAE5DD00F1EEE900FFFFFF00FFFFFF00FDFDFC00FFFF
+      FF00FFFFFF00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF007955250091744A00AF9A7B00A68E6C00AC977700AA94
+      7400977C5300D0C4B37FF3F0EC00FFFFFF00FFFFFF00FBFAF900FCFCFB00FEFE
+      FE00FEFEFE00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFEFE00FEFE
+      FE00FEFEFE00FEFEFE00FDFCFB00FBFAF800FBFAF900FEFEFE00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FBFBF900FCFB
+      FB00FEFEFE00FEFEFE00FEFEFE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+    Wx_Class = 'wxStaticBitmap'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Enabled = False
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXSTATICBITMAP1'
+    Wx_IDValue = 1094
+  end
+  object WxTimer1: TWxTimer
+    Left = 18
+    Top = 410
+    Width = 28
+    Height = 27
+    TabOrder = 64
+    Glyph.Data = {
+      36090000424D3609000000000000360000002800000018000000180000000100
+      2000000000000009000000000000000000000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000000
+      0000000000000000000000000000000000000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000808000008080000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000008000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000000000FFFFFF00FFFFFF0000008000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000008000FFFFFF00FFFFFF000000
+      0000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000008000FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000000000000000000000000000FFFFFF00FFFFFF000000
+      8000FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF0000008000FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000000000FFFFFF00FFFFFF0000008000FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF0000008000FFFFFF00FFFFFF000000
+      0000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000808000008080000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000000
+      0000000000000000000000000000000000000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000}
+    Wx_Class = 'wxTimer'
+    Wx_IDName = 'ID_WXTIMER1'
+    Wx_IDValue = 1088
+    Wx_Interval = 100
+    Wx_AutoStart = True
+    EVT_TIMER = 'WxTimer1Timer'
+  end
+  object WxTimer2: TWxTimer
+    Left = 51
+    Top = 412
+    Width = 28
+    Height = 27
+    TabOrder = 65
+    Glyph.Data = {
+      36090000424D3609000000000000360000002800000018000000180000000100
+      2000000000000009000000000000000000000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000000
+      0000000000000000000000000000000000000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000808000008080000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000008000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000000000FFFFFF00FFFFFF0000008000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000008000FFFFFF00FFFFFF000000
+      0000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000008000FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00C0C0C000C0C0C000C0C0C000C0C0C000FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000000000000000000000000000FFFFFF00FFFFFF000000
+      8000FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      80000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF0000008000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF0000008000FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      8000008080000080800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00000000000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000000000FFFFFF00FFFFFF0000008000FFFF
+      FF00FFFFFF0000000000C0C0C000FFFFFF0000008000FFFFFF00FFFFFF000000
+      0000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000808000008080000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000000
+      0000000000000000000000000000000000000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000}
+    Wx_Class = 'wxTimer'
+    Wx_IDName = 'ID_WXTIMER2'
+    Wx_IDValue = 1089
+    Wx_Interval = 100
+    Wx_AutoStart = False
+    EVT_TIMER = 'WxTimer2Timer'
+  end
+end

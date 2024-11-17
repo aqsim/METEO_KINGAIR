@@ -1,0 +1,42 @@
+# Project: Projet1
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 6.10.2 on 30/04/17 07:08
+
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = windres.exe
+OBJ       = Objects/MingW/Def_MTOApp.o Objects/MingW/Def_MTODlg.o Objects/MingW/IPCuser.o Objects/MingW/Def_MTO_private.res
+LINKOBJ   = Objects/MingW/Def_MTOApp.o Objects/MingW/Def_MTODlg.o Objects/MingW/IPCuser.o Objects/MingW/Def_MTO_private.res
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/Lib" -mwindows -lwxmsw28 -lwxmsw28_gl -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregex -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32 -lopengl32  -g3 
+INCS      = -I"include"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/lib/gcc/mingw32/3.4.2/include" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.2/backward" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.2/mingw32" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.2" -I"C:/Program Files (x86)/Dev-Cpp/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/msw" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/generic" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/fl" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/gizmos" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/html" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/mmedia" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/net" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/ogl" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/plot" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/protocol" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/stc" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/svg" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/xml" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/xrc" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx" -I"C:/Program Files (x86)/Dev-Cpp/include/common"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common"
+BIN       = Output/MingW/MTO_MA.exe
+DEFINES   =  -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__
+CXXFLAGS  = $(CXXINCS) $(DEFINES) -fno-exceptions -fno-pcc-struct-return -fstrict-aliasing -Wall -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__   -fexpensive-optimizations -O3 -g3
+CFLAGS    = $(INCS) $(DEFINES) -fno-exceptions -fno-pcc-struct-return -fstrict-aliasing -Wall -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__   -fexpensive-optimizations -O3 -g3
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "Output\MingW\MTO_MA.exe" $(LIBS)
+
+Objects/MingW/Def_MTOApp.o: $(GLOBALDEPS) Def_MTOApp.cpp
+	$(CPP) -c Def_MTOApp.cpp -o Objects/MingW/Def_MTOApp.o $(CXXFLAGS)
+
+Objects/MingW/Def_MTODlg.o: $(GLOBALDEPS) Def_MTODlg.cpp
+	$(CPP) -c Def_MTODlg.cpp -o Objects/MingW/Def_MTODlg.o $(CXXFLAGS)
+
+Objects/MingW/IPCuser.o: $(GLOBALDEPS) IPCuser.c
+	$(CPP) -c IPCuser.c -o Objects/MingW/IPCuser.o $(CXXFLAGS)
+
+Objects/MingW/Def_MTO_private.res: Objects/MingW/Def_MTO_private.rc Def_MTOApp.rc 
+	$(WINDRES) --input-format=rc -o Objects/MingW/Def_MTO_private.res $(RCINCS) Objects/MingW/DEF_MT~1.RC -O coff

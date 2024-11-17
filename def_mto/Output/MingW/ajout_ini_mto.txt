@@ -1,0 +1,8 @@
+[POS]
+px=845
+py=12
+sx=515
+sy=578
+
+
+Les chiffres sont bidons : mettre ceux lus dans le ini de wideclient
